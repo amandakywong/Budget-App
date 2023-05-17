@@ -25,3 +25,5 @@ logSavingButton.addEventListener("mouseup", (e) => {
   
     alert("Submitted saving :)");
   });
+
+  console.log(localStorage.getItem("DollarSpent"));
