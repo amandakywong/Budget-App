@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Coin Dash Budgeting</title>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        
+    </head>
+    <header>
+        <img class="logo" src="/Media/logo.png" alt="Coin Dash logo">
+        <h2>Coin Dash</h2>
+            <ul class="nav">
+                <li>Logger</li>
+                <li>Tracker</li>
+                <li>Goals</li>
+            </ul>
+        <img class="profile" src="/Media/profile icon.png" alt="profile">
+    </header>
+    <body>
+        <div class="container" id="form">
+            <form class="spend section">
+                <p>I spent</p>
+                <p>$<input type="number" class="inputdollar" name="inputdollar" id="inputdollarspent" required></p>
+                <h3></h3>
+                <p>On</p>
+                <p id="date"><input type="date" id="inputdatespent" name="date" required></p>
+                <button type="button" class="button" id="logexpensebutton" onclick="return allLetterCheck()">log expense</button>
+            </form>
+            <form class="save section">
+                <p>I received</p>
+                <p>$<input type="number" class="inputdollar" name="inputdollar" id="inputdollarsaved" required></p>
+                <p>On</p>
+                <p id="date"><input type="date" id="inputdatesaved" name="date" required></p>
+                <img id="coindrop" src="Media/win coin.png" alt="win coin img">
+                <button type="button" class="button" id="logsavingbutton">log saving</button>
+            </form>
+        </div>
+    <script src="/index.js"></script>
+    </body>
+    <footer>
+        <img class="skateboard" src="/Media/skateboard.png" alt="skateboard img">
+        <img class="coinstack" src="/Media/coin stack.png" alt="coin stack img"> 
+    </footer>
+</html>
