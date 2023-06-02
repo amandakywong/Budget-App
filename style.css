@@ -18,9 +18,14 @@ ul{
     display: inline-block;
     vertical-align: middle;
     white-space:nowrap;
-    width: 50%;
-   
-    
+    width: 50%;    
+}
+a {
+    color: #EEEEEE;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
 }
 .logo{
     max-width: 11%;
@@ -29,11 +34,48 @@ ul{
     vertical-align:bottom;
 }
 .profile{
-    max-width: 6%;
+    max-width: 8%;
+    border: solid 3px;
+    border-radius: 90px;
+    border-color: #EEEEEE;
     position: absolute;
-    right: 1em;
+    right: 3em;
     top: 2em;
 }
+
+
+#tracker {
+    padding-top: 5%;
+  }
+
+h3 {
+    font-size: 40px;
+    font-family: Silom;
+    text-align: center;
+    
+}
+th {
+    font-family: Silom ;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+
+}
+table {
+    position:relative;
+    border: 1px solid;
+    width: 45rem;
+    margin: auto;
+    table-layout: fixed;
+    text-align: center;
+    background-color: #FEF06A;
+    border-spacing: 0px 18px;
+}
+
+thead th:nth-child(1) {
+    width: 33%;
+  }
+
 h2{
     display: inline;
     color: #EEEEEE;
@@ -47,7 +89,8 @@ p{
 }
 .spend section, .save section{
     float: left;
-    width: 50%;
+    width: 100%;
+
 }
 .container{
     display: flex;
@@ -60,10 +103,6 @@ p{
     height: 52px;
     width: 180px;
     background-color: #EEEEEE;
-}
-
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
 }
 
 #date {   
@@ -101,22 +140,26 @@ input[type=date]{
     cursor: pointer;   
 }
 
+#alertSpend {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+#alertSav {
+    text-decoration: underline;
+    font-weight: bold;
+    display: inline-block;
+}
+
 #logexpensebutton {
     margin-top: 58px;
 }
-.skateboard{
-    max-width: 24%;
-    /* becomes much smaller on resizing ? min-width: 21%;*/
-    position: absolute;
-    top: 78%;
-    right: 4%;
-}
+
 .coinstack{
-    max-width: 17%;
-    /*min-width: 10%;*/
-    position: absolute;
-    top: 72%;
-    left: 5%;
+    max-width: 15%;
+    height: auto;
+    position:relative;
+    left: 10px;
 }
 
 #coindrop{

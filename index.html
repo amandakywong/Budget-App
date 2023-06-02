@@ -9,35 +9,59 @@
         <img class="logo" src="/Media/logo.png" alt="Coin Dash logo">
         <h2>Coin Dash</h2>
             <ul class="nav">
-                <li>Logger</li>
-                <li>Tracker</li>
-                <li>Goals</li>
+                <li><a href="/index.html">Logger</a></li>
+                <li><a>Tracker</a></li>
+                <li><a>Goals</a></li>
             </ul>
-        <img class="profile" src="/Media/profile icon.png" alt="profile">
+        <img class="profile" src="/Media/mario.png" alt="profile">
     </header>
     <body>
+        <div id="tracker">
+            <h3>Spending</h3>
+            <table id="dynamicTableSpend">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>$</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div>
+            <h3>Saving</h3>
+            <table id="dynamicTableSav">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>$</th>
+                    </tr>
+                </thead>
+            </table>
+        <img class="coinstack" src="/Media/coin stack.png" alt="coin stack img"> 
+        </div>
+        <br>
         <div class="container" id="form">
             <form class="spend section">
                 <p>I spent</p>
                 <p>$<input type="number" class="inputdollar" name="inputdollar" id="inputdollarspent" required></p>
-                <h3></h3>
                 <p>On</p>
                 <p id="date"><input type="date" id="inputdatespent" name="date" required></p>
-                <button type="button" class="button" id="logexpensebutton" onclick="return allLetterCheck()">log expense</button>
+                <span  id="alertSpend"></span>
+                <button type="button" class="button" id="logexpensebutton">log expense</button>
             </form>
             <form class="save section">
-                <p>I received</p>
+                <p>I saved</p>
                 <p>$<input type="number" class="inputdollar" name="inputdollar" id="inputdollarsaved" required></p>
                 <p>On</p>
                 <p id="date"><input type="date" id="inputdatesaved" name="date" required></p>
                 <img id="coindrop" src="Media/win coin.png" alt="win coin img">
+                <span  id="alertSav">alert</span>
                 <button type="button" class="button" id="logsavingbutton">log saving</button>
             </form>
         </div>
-    <script src="/index.js"></script>
+    <script src="/script.js"></script>
     </body>
     <footer>
-        <img class="skateboard" src="/Media/skateboard.png" alt="skateboard img">
-        <img class="coinstack" src="/Media/coin stack.png" alt="coin stack img"> 
+       
     </footer>
 </html>
