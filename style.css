@@ -1,10 +1,10 @@
 
-
+ 
 body {
-    background-color: #FE7963;
-}  
-
-
+    background-image: url(/Media/mario\ background.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
 li{
     display: inline-block;
     position: relative;
@@ -12,6 +12,7 @@ li{
     color: #EEEEEE;
     margin: 15px;
     padding: 0% 2%;
+    cursor: pointer;
 
 }
 ul{
@@ -41,39 +42,48 @@ a:hover{
     position: absolute;
     right: 3em;
     top: 2em;
+    cursor: pointer;
 }
-
 
 #tracker {
     padding-top: 5%;
   }
 
 h3 {
-    font-size: 40px;
+    font-size: 32px;
     font-family: Silom;
     text-align: center;
-    
 }
 th {
-    font-family: Silom ;
-    font-size: 20px;
+    font-family: Silom;
+    font-size: 18px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 17px;
 
 }
 table {
     position:relative;
-    border: 1px solid;
-    width: 45rem;
+    width: 32rem;
     margin: auto;
     table-layout: fixed;
     text-align: center;
-    background-color: #FEF06A;
     border-spacing: 0px 18px;
+    background-color: #ede06d;
+    box-shadow: 10px 10px 20px 2px #292631; 
 }
-
+/*#brickbackground {
+    width: 38rem;
+    height: 5rem;
+    margin: auto;
+    background-image: url(/Media/bricks.jpg);
+    background-attachment:local;
+    background-size:cover;
+    border: solid 2px;
+    border-color: beige;
+    box-shadow: 10px 10px 20px 2px #292631;
+} */
 thead th:nth-child(1) {
-    width: 33%;
+    width: 60%;
   }
 
 h2{
@@ -87,15 +97,13 @@ p{
     font-family: Silom;
     color:#EEEEEE;
 }
-.spend section, .save section{
-    float: left;
-    width: 100%;
-
+.spendSection, .saveSection{
+    padding: 30px;
 }
 .container{
     display: flex;
-    margin: 10% 20%;
-    justify-content: left;
+    margin: 10%;
+    justify-content: center;
     column-gap: 18%;
 }
 
@@ -137,29 +145,23 @@ input[type=date]{
     width: 180px;
     font-family: Silom;
     border-color: #FE7963;
-    cursor: pointer;   
+    cursor: pointer;
+    box-shadow: 10px 10px 20px 2px #292631; 
 }
 
-#alertSpend {
-    text-decoration: underline;
+#alertSpend, #alertSav  {
+    padding: 8px;
+    font-size: 12px;
+    text-align: center;
+    width: 100px;
+    margin: auto;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bold;
-}
-
-#alertSav {
-    text-decoration: underline;
-    font-weight: bold;
-    display: inline-block;
+    color: black;
 }
 
 #logexpensebutton {
     margin-top: 58px;
-}
-
-.coinstack{
-    max-width: 15%;
-    height: auto;
-    position:relative;
-    left: 10px;
 }
 
 #coindrop{
@@ -167,7 +169,6 @@ input[type=date]{
     position: relative;
     display: block;
     left: 8rem;
-
 }
 
 #coindrop:hover {

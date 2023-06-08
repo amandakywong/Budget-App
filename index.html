@@ -18,6 +18,7 @@
     <body>
         <div id="tracker">
             <h3>Spending</h3>
+            <div id="brickbackground">
             <table id="dynamicTableSpend">
                 <thead>
                     <tr>
@@ -26,6 +27,7 @@
                     </tr>
                 </thead>
             </table>
+            </div>
         </div>
         <div>
             <h3>Saving</h3>
@@ -37,25 +39,24 @@
                     </tr>
                 </thead>
             </table>
-        <img class="coinstack" src="/Media/coin stack.png" alt="coin stack img"> 
         </div>
         <br>
         <div class="container" id="form">
-            <form class="spend section">
+            <form class="spendSection">
                 <p>I spent</p>
+                <p  id="alertSpend"></p>
                 <p>$<input type="number" class="inputdollar" name="inputdollar" id="inputdollarspent" required></p>
                 <p>On</p>
                 <p id="date"><input type="date" id="inputdatespent" name="date" required></p>
-                <span  id="alertSpend"></span>
                 <button type="button" class="button" id="logexpensebutton">log expense</button>
             </form>
-            <form class="save section">
+            <form class="saveSection">
                 <p>I saved</p>
+                <p id="alertSav"></p>
                 <p>$<input type="number" class="inputdollar" name="inputdollar" id="inputdollarsaved" required></p>
                 <p>On</p>
                 <p id="date"><input type="date" id="inputdatesaved" name="date" required></p>
                 <img id="coindrop" src="Media/win coin.png" alt="win coin img">
-                <span  id="alertSav">alert</span>
                 <button type="button" class="button" id="logsavingbutton">log saving</button>
             </form>
         </div>
